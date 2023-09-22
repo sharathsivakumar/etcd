@@ -38,7 +38,7 @@ test-integration:
 
 .PHONY: test-e2e
 test-e2e: build
-	PASSES="e2e" ./scripts/test.sh $(GO_TEST_FLAGS)
+	PASSES="e2e" ./scripts/test-e2e.sh $(GO_TEST_FLAGS)
 
 .PHONY: test-grpcproxy-integration
 test-grpcproxy-integration:
